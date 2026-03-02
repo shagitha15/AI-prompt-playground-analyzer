@@ -1,0 +1,35 @@
+[project]
+name = "prompt-playground-analyzer"
+version = "0.1.0"
+description = "AI Prompt Playground Analyzer using Ollama and LangChain"
+authors = [
+    { name="Shagiii" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "langchain>=0.2.0",
+    "langchain-community>=0.2.0",
+    "ollama>=0.3.0",
+    "gradio>=4.0.0",
+    "langchain-ollama>=1.0.1",
+    "pandas>=2.3.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipython",
+    "black",
+    "ruff"
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
